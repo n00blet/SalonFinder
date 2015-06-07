@@ -6,10 +6,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.salon.finder.R;
+import com.salon.finder.adapter.CustomAdapter;
+import com.salon.finder.model.SalonObjects;
 import com.salon.finder.utils.AppConstants;
 import com.salon.finder.utils.SalonRestClient;
 
@@ -19,20 +24,33 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends ActionBarActivity {
 
     private DateTime dateTime;
+    private ArrayList<SalonObjects> salons;
+    private ListView listView;
+    private CustomAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         dateTime = DateTime.now();
+        salons = new ArrayList<>();
+        listView = (ListView) findViewById(R.id.salon_list);
         String data[] = dateTime.toLocalDate().toString().split("-");
         Log.d("Data", ":" + data);
-        getNearByFourSquareSalon("20150607","12.96,77.56");
+        getNearByFourSquareSalon("20150607", "12.96,77.56");
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.d("Position",":" + position);
+            }
+        });
+
     }
 
 
@@ -63,17 +81,24 @@ public class MainActivity extends ActionBarActivity {
                      JSONArray ar = re.getJSONArray("venues");
                      int len = ar.length();
                     for(int i=0;i<len;i++){
+                        SalonObjects salon = new SalonObjects();
                         JSONObject location = ar.getJSONObject(i).getJSONObject("location");
                         JSONArray address = location.getJSONArray("formattedAddress");
-                        Log.d("Location",":" + location);
-                        Log.d("Address",":" + address);
+                        salon.setLocation(location.toString());
+                        salons.add(salon);
                     }
 
                 }catch (Exception e){
                     e.printStackTrace();
                 }
 
+                if(salons.size()>0){
+                    adapter = new CustomAdapter(MainActivity.this,salons);
+                    listView.setAdapter(adapter);
+                }
+
             }
+
 
 
             @Override
