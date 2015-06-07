@@ -84,7 +84,10 @@ public class MainActivity extends ActionBarActivity {
                         SalonObjects salon = new SalonObjects();
                         JSONObject location = ar.getJSONObject(i).getJSONObject("location");
                         JSONArray address = location.getJSONArray("formattedAddress");
+                        Log.d("Address",":" + address);
+                        Log.d("Location",":" + location);
                         salon.setLocation(location.toString());
+                        salon.setName(address.toString());
                         salons.add(salon);
                     }
 

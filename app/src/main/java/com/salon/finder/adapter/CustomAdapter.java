@@ -56,10 +56,8 @@ public class CustomAdapter extends BaseAdapter {
             holder = (ViewHolder)convertView.getTag();
         }
 
-        for(SalonObjects s:mSalons){
-            holder.name.setText(s.getName());
-            holder.location.setText(s.getLocation());
-        }
+        holder.name.setText(mSalons.get(position).getName());
+        holder.location.setText(mSalons.get(position).getLocation());
 
         return convertView;
     }
