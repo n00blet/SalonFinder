@@ -1,8 +1,8 @@
 package com.salon.finder.ui;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,13 +21,13 @@ import com.salon.finder.utils.SalonRestClient;
 import org.apache.http.Header;
 import org.joda.time.DateTime;
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends AppCompatActivity{
 
     private DateTime dateTime;
     private ArrayList<SalonObjects> salons;
@@ -54,6 +54,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+
+
+
     private void getNearByFourSquareSalon(String version,String location){
         HashMap<String,String> paramMap = new HashMap<>();
         paramMap.put("client_id",AppConstants.FOURSQUARE_CLIENT);
@@ -75,7 +78,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                Log.d("Respinse",":" + response);
+                Log.d("Response",":" + response);
                 try {
                      JSONObject re = response.getJSONObject("response");
                      JSONArray ar = re.getJSONArray("venues");
@@ -139,4 +142,8 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
 }

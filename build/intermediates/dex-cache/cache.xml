@@ -2,53 +2,186 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\pre-dexed\debug\classes-1f93061875b81a90ba74977d32f76042094367f3.jar" />
+        revision="22.0.1"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-5d1466a2f1195e8c418b2622b242c196239c623c.jar" />
     </item>
     <item
-        jar="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\pre-dexed\debug\classes-16faf8595b4deabd4f041fa287e642ea07fdb65f.jar" />
+        revision="22.0.1"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-55eae21acdd4dfa2b62ac9e34708e9a743c231b0.jar" />
     </item>
     <item
-        jar="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-5b37ab17b635aac6c23f41950600ebcd249f028a.jar" />
+        revision="22.0.1"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-b0c0b31706cf4c260f6dc445adcfbd58f5a75d67.jar" />
     </item>
     <item
-        jar="C:\Users\Rakshith\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
+        revision="22.0.1"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-cb525e15e0e714455c1eccca7bfb2a4a296b5a99.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-5366bb4f4e26096b5754d31b391e398ca16d970a.jar" />
+    </item>
+    <item
+        jar="/home/accure/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.7/5599707a3eaad13e889f691b3af78c8c03842195/joda-time-2.7.jar"
+        jumboMode="false"
+        revision="22.0.1"
         sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\pre-dexed\debug\joda-time-2.7-015c05ea72e7eb8b0ee6919356a029f2a4a18cf0.jar" />
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/joda-time-2.7-6af6ab590f51a0c764db7b7587ad32675375bc87.jar" />
     </item>
     <item
-        jar="C:\Users\Rakshith\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.5\77bf7cacf9cefe19dc105e5425d2eb1bb5285881\android-async-http-1.4.5.jar"
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-14f5ae044b9e31d50f984da7f7e18b971c2c325e.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-a8cd1f869498a5f331b1ac8889daf0523006a9aa.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-461dbded79f3ec9e0af8f60eb32efdaad61f5dbb.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-194be2851acd5b24d33443e227d3519522708108.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-214ad44848196eba66dff51e28d1695b5ae5e670.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-53adbcbfd5f9332c357abd8a04f8a0ab8ca33307.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-88336c6b5e24a6d3e77e77e14b1b04d49cae1e15.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-1504e817816f882d6dc294a6d057317f4ef4bbb9.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-06b00879fd3520bb643c26e68eff6dacc22cf822.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-3382b1ee031919e30dc47a73dabef2b7b5b0c6df.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-3c5f3ddcdc1b0d1e37d5b404b34853d3844707ec.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-3f4f4d9808fb9bd6432e8f378cd4296c83948198.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-dc929496a1254a6ea7732f4320a01b2ce410c851.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-c04f6a5b1e47a41f7bdf9f91d8437ba67904d73d.jar" />
+    </item>
+    <item
+        jar="/home/accure/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.5/77bf7cacf9cefe19dc105e5425d2eb1bb5285881/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
         sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
-        <dex dex="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.5-679fb35a9a8e11882b6d0df6b293ca2664679eca.jar" />
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-25aff5ddee396aaa0346481508e43fab608fd83c.jar" />
     </item>
     <item
-        jar="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\pre-dexed\debug\classes-c7336cbb2e5f9240b23ebb715e92243bfede512d.jar" />
+        revision="22.0.1"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-861ffaa6d70708edfada9bb7ae1ec81996cadce7.jar" />
     </item>
     <item
-        jar="C:\Users\Rakshith\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\Rakshith\AndroidStudioProjects\SalonFinder\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-e18cd6b94b28e8d7114d38f28a2dd5825ef440d1.jar" />
+        revision="22.0.1"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-cfa78b6708638665d77363d274f019828c9355ab.jar" />
+    </item>
+    <item
+        jar="/home/accure/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-82604a5e2c50c573ff63b516c57b10f1deabb883.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-5e26875c0a220ce70019b81e4660b8805eac03fc.jar" />
+    </item>
+    <item
+        jar="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/home/accure/AndroidStudioProjects/SalonFinder/app/build/intermediates/pre-dexed/debug/classes-2bab82a3457a52703fdd68f94fa28604314cb10f.jar" />
     </item>
 
 </items>
