@@ -41,9 +41,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     private ListView listView;
     private CustomAdapter adapter;
     private Location mLastLocation;
-    // Google client to interact with Google API
     private GoogleApiClient mGoogleApiClient;
-    // boolean flag to toggle periodic location updates
     private boolean mRequestingLocationUpdates = false;
     private LocationRequest mLocationRequest;
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
@@ -93,6 +91,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
     private void makeApiRequests(String ll){
+        dateTime = DateTime.now();
+        String date = dateTime.toLocalDate().toString("-");
+        Log.d("Date","::" + date);
         getNearByFourSquareSalon("20150608",ll);
     }
 
