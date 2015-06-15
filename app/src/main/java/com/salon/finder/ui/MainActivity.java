@@ -90,11 +90,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     }
 
 
-    private void makeApiRequests(String ll){
+    private void makeApiRequests(String ll) {
         dateTime = DateTime.now();
         String date = dateTime.toLocalDate().toString("-");
-        Log.d("Date","::" + date);
-        getNearByFourSquareSalon("20150608",ll);
+        Log.d("Date", "::" + date);
+        getNearByFourSquareSalon("20150608", ll);
     }
 
     private void getNearByFourSquareSalon(String version, String location) {
@@ -122,18 +122,69 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 Log.d("Response", ":" + response);
                 try {
-                    JSONObject re = response.getJSONObject("response");
-                    JSONArray ar = re.getJSONArray("venues");
-                    int len = ar.length();
-                    for (int i = 0; i < len; i++) {
-                        SalonObjects salon = new SalonObjects();
-                        JSONObject location = ar.getJSONObject(i).getJSONObject("location");
-                        JSONArray address = location.getJSONArray("formattedAddress");
-                        Log.d("Address", ":" + address);
-                        Log.d("Location", ":" + location);
-                        salon.setLocation(location.toString());
-                        salon.setName(address.toString());
-                        salons.add(salon);
+                    JSONObject responseObj = response.getJSONObject("response");
+                    if (responseObj != null) {
+
+                        JSONArray jbj1 = responseObj.getJSONArray("venues");
+                        if (jbj1 != null) {
+                            for (int i = 0; i < jbj1.length(); i++) {
+                                JSONObject jb = (JSONObject) jbj1.get(i);
+                                if (!jb.getString("id").equals("null")) {
+                                    SalonObjects salonObjects = new SalonObjects();
+                                    salonObjects.setId(jb.getString("id"));
+                                    salonObjects.setContact(jb.getString("contact"));
+                                    salonObjects.setName(jb.getString("name"));
+
+                                    JSONObject jlocation = jb.getJSONObject("location");
+                                    if (jlocation != null) {
+                                        String jlat = jlocation.get("lat") + "";
+                                        String jlng = jlocation.get("lng") + "";
+                                        salonObjects.setLatitude(jlocation.getString("lat"));
+                                        salonObjects.setLongitude(jlocation.getString("lng"));
+
+                                        JSONArray jformatedAdd = jlocation.getJSONArray("formattedAddress");
+                                        if (jformatedAdd != null) {
+                                            String address = "";
+                                            for (int f = 0; f < jformatedAdd.length(); f++) {
+
+                                                if (!address.equals("")) {
+                                                    address = address + "," + (String) jformatedAdd.get(f);
+                                                } else {
+                                                    address = (String) jformatedAdd.get(f);
+                                                }
+                                            }
+                                            salonObjects.setLocation(address);
+
+
+                                        }
+                                    }
+
+                                    JSONObject stats = jb.getJSONObject("stats");
+                                    if (stats != null) {
+                                        String checkinsCount = stats.getInt("checkinsCount") + "";
+                                        String usersCount = stats.getInt("usersCount") + "";
+                                        String tipCount = stats.getInt("tipCount") + "";
+
+                                        salonObjects.setCheckedInCount(checkinsCount);
+                                        salonObjects.setUsersCount(usersCount);
+
+                                    }
+
+                                    JSONArray jcat = jb.getJSONArray("categories");
+                                    if (jcat != null) {
+                                        for (int j = 0; j < jcat.length(); j++) {
+                                            JSONObject jbcatObj = (JSONObject) jcat.get(j);
+                                            if (jbcatObj != null) {
+                                                salonObjects.setCategory_id(jbcatObj.getString("id"));
+                                            }
+
+                                        }
+                                    }
+                                    salons.add(salonObjects);
+                                }
+
+                            }
+                        }
                     }
 
                 } catch (Exception e) {
